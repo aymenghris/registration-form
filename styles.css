@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #D3D4F7;
+    --secondary-color: #5B5675;
+    --ternary-color: #5138ED;
+    --light-color: #FFFFFF;
+    --gary-color: #BCB8D0;
+}
+
+.container {
+    background-color: var(--primary-color);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box {
+    background-color: var(--light-color);
+    border-radius: 10px;
+    padding: 45px;
+    width: 375px;
+    max-width: 95%;
+    box-shadow: 5px 5px 10px 1px rgb(0, 0, 0, 12%);
+}
+
+@media (max-width: 480px) {
+    .box {
+        padding: 75px 25px;
+    }
+}
+
+.box h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 35px;
+
+}
+
+.box form div {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--secondary-color);
+    border-radius: 250px;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+.box form div i {
+    font-size: 15 px;
+    color: var(--secondary-color);
+    margin: 0 10px;
+}
+
+.box form div:hover i{
+    color: var(--ternary-color);
+}
+
+.box form div input {
+    background-color: inherit;
+    font-size: 1;
+    outline: none;
+    border: none;
+    padding: 5px;
+    min-width: 0;
+    flex: 1;
+}
+
+.box form div input::placeholder {
+    opacity: 1;
+    color: var(--gary-color);
+    font-size: 12px;
+}
+
+.box form div input[type="date"] {
+    color: var(--gary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.box form input[type="submit"]{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 250px;
+    background-color: var(--ternary-color);
+
+}
+
+.box form input[type="submit"]:hover{
+    background-color: #3826ab;
+    cursor: pointer;
+}
+
+.box span {
+    margin-top: 25px;
+    font-size: 12px;
+    color: var(--gary-color);
+    display: block;
+    text-align: center;
+}
+
+.box span a  {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--ternary-color);
+
+
+}
